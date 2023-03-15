@@ -30,4 +30,18 @@ export const feature = createI18n(provider, {
       discard: '放棄',
     },
   },
+  de: {
+    unsaved: 'Save Changes',
+    error: {
+      'not enabled': 'Not Enabled',
+      'not enabled description': 'Try enable this feature?',
+      'not found': 'Not Found',
+      'not found description': "Hmm... Weird we can't find it",
+    },
+    bn: {
+      enable: 'Enable Feature',
+      save: 'Save',
+      discard: 'Discard',
+    },
+  }
 });

@@ -1,4 +1,4 @@
-import { BsChatLeftText as ChatIcon } from 'react-icons/bs';
+import { BsHash as ChatIcon, } from 'react-icons/bs';
 import { GuildChannel } from 'api/bot';
 import { ChannelTypes } from 'api/discord';
 import { SelectField } from 'components/forms/SelectField';

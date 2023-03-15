@@ -30,22 +30,6 @@ export function DefaultNavbar({ children }: { children?: ReactNode }) {
       linkColor: 'cyan.200',
     }
   );
-
-  const breadcrumb = [
-    {
-      icon: <IoHome />,
-      text: <common.T text="pages" />,
-      to: '/user/home',
-    },
-  ];
-
-  if (activeItem != null)
-    breadcrumb.push({
-      icon: activeItem.icon,
-      text: <>{activeItem.name}</>,
-      to: activeItem.path,
-    });
-
   return (
     <NavbarBox>
       <Flex
@@ -59,34 +43,6 @@ export function DefaultNavbar({ children }: { children?: ReactNode }) {
           [show.navbar]: '0',
         }}
       >
-        <Breadcrumb
-          fontSize="sm"
-          separator={<Icon verticalAlign="middle" as={ChevronRightIcon} color={linkColor} />}
-        >
-          {breadcrumb.map((item, i) => (
-            <BreadcrumbItem key={i}>
-              <Tag
-                as={Link}
-                to={item.to}
-                gap={1}
-                rounded="full"
-                colorScheme="brand"
-                color={linkColor}
-              >
-                {item.icon}
-                <Text>{item.text}</Text>
-              </Tag>
-            </BreadcrumbItem>
-          ))}
-        </Breadcrumb>
-        <Text
-          color={textColorPrimary}
-          fontWeight="bold"
-          fontSize={{ base: '25px', '3sm': '34px' }}
-          mb={2}
-        >
-          {activeItem?.name || <SkeletonText w="full" noOfLines={2} />}
-        </Text>
       </Flex>
       {children ?? (
         <NavbarLinksBox>

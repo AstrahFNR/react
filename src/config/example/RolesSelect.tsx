@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import { useGuildRolesQuery } from 'stores';
 import { Params } from 'views/feature/FeatureView';
 import { SelectField } from 'components/forms/SelectField';
-import { BsPeopleFill } from 'react-icons/bs';
+import { Text } from '@chakra-ui/react';
+import { BsPersonFill } from 'react-icons/bs';
 import { toRGB } from 'utils/common';
 import { Role } from 'api/bot';
 
@@ -22,13 +23,7 @@ export function RolesSelect({
   const render = (role: Role) => {
     return {
       value: role.id,
-      label: role.name,
-      icon:
-        role.icon?.iconUrl != null ? (
-          <Image src={role.icon?.iconUrl} bg={toRGB(role.color)} w="25px" h="25px" />
-        ) : (
-          <Icon as={BsPeopleFill} color={toRGB(role.color)} w="20px" h="20px" />
-        ),
+      label: <Text color={role.color ? toRGB(role.color) : '#99aab5'}>{role.name}</Text>,
     };
   };
 

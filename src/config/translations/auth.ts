@@ -10,4 +10,8 @@ export const auth = createI18n(provider, {
     login: '登錄',
     'login description': '登錄您的 Discord 帳戶',
   },
+  de: {
+    login: 'Login',
+    'login description': 'Melden Sie sich bei Ihrem Discord-Konto an',
+  }
 });

@@ -26,4 +26,16 @@ export const common = createI18n(provider, {
       login: '登錄失敗',
     },
   },
+  de: {
+    loading: 'Wird geladen',
+    search: 'Suchen',
+    'select lang': 'Wähle deine Sprache',
+    dashboard: 'Armaturenbrett',
+    profile: 'Profil',
+    pages: 'Seiten',
+    logout: 'Seiten',
+    fail: {
+      login: 'Einloggen fehlgeschlagen',
+    },
+  }
 });

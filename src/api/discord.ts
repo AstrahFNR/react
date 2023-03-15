@@ -21,6 +21,7 @@ export type Guild = {
   name: string;
   icon: string;
   permissions: string;
+  owner: string
 };
 
 export type IconHash = string;

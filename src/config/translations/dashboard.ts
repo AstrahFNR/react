@@ -3,7 +3,7 @@ import { createI18n } from 'hooks/i18n';
 
 export const dashboard = createI18n(provider, {
   en: {
-    welcome: 'Wellcome back, ',
+    welcome: 'Welcome back, ',
     pricing: 'Pricing',
     invite: {
       title: 'Invite our Bot',
@@ -46,4 +46,26 @@ export const dashboard = createI18n(provider, {
       description: '使用你的服務器命令使用量',
     },
   },
+  de: {
+    welcome: 'Wellcome back, ',
+    pricing: 'Pricing',
+    invite: {
+      title: 'Invite our Bot',
+      description: 'Try our discord bot with one-click',
+      bn: 'Invite now',
+    },
+    music: {
+      title: 'Music Player',
+      description: 'Play Your Favoite songs in Voice channels',
+      'now playing': 'Now Playing',
+    },
+    vc: {
+      create: 'Create a voice channel',
+      'created channels': 'Created Voice channels',
+    },
+    command: {
+      title: 'Command Usage',
+      description: 'Use of commands of your server',
+    },
+  }
 });

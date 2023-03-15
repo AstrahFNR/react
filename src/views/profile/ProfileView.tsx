@@ -62,6 +62,9 @@ export function ProfileView() {
           <Text fontWeight="600" fontSize="2xl">
             {user.username}
           </Text>
+          <Text>
+            They call me Big Daddy Jayden, rumour is I own Baddog discord bot!
+          </Text>
         </VStack>
       </Flex>
       <Card w="full" rounded="3xl" h="fit-content">
